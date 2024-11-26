@@ -1,0 +1,8 @@
+{
+    "emptyRetypeEmail": "Please retype email address.",
+    "invalidEmail": "Please check your email address and password",
+    "nonMatchingEmails": "Email and retype email address do not match",
+    "emptyUserNameField": "The email address is mandatory",
+    "emptyPasswordField": "The password is mandatory",
+    "invalidLoginData": "Please check your email address and password"
+}

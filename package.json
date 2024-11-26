@@ -1,0 +1,29 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "env:live": "cross-env test_env=live npx playwright test --grep @regression --headed --project Regression --workers 1",
+    "env:live-api": "cross-env test_env=live npx playwright test --grep @api --headed --project Regression --workers 1",
+    "env:oat": "cross-env test_env=oat npx playwright test --grep @regression --headed --project Regression --workers 1",
+    "env:oat-api": "cross-env test_env=oat npx playwright test --grep @api --headed --project Regression --workers 1",
+    "env:uat": "cross-env test_env=uat npx playwright test --grep @regression --project Regression",
+    "env:uat-api": "cross-env test_env=uat npx playwright test --grep @api --project Regression",
+    "env:systest": "cross-env test_env=systest npx playwright test --grep @regression --project Regression --workers 1",
+    "env:systest-api": "cross-env test_env=systest npx playwright test --grep @api --project Regression --workers 1",
+    "env:dev:smoke": "cross-env test_env=dev npx playwright test --grep @smoke --project AllBrowsers",
+    "env:systest:smoke": "cross-env test_env=systest npx playwright test --grep @smoke --project AllBrowsers"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@playwright/test": "^1.35.1",
+    "@types/node": "^20.8.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "playwright-teamcity-reporter": "^0.2.2"
+  }
+}
